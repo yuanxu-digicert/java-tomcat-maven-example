@@ -7,6 +7,6 @@
 <p>Hello Team, This Jenkins Tutorial Seriese. Hi, I am your instructor Anshul Chauhan</p>
 
 
-<p> The deployment is successful via Jenkins job</p>
+<p> The Code is Deployed on Production, Thanks all my team members for your support</p>
 </body>
 </html>
