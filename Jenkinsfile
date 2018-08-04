@@ -19,9 +19,11 @@ pipeline {
             }
         }
 
-        stage('Deploy Artifact in staging Area'){
+        stage ('Deploy Build in Staging Area'){
             steps{
-                build job : 'Deploy_Servlet_Staging_Env'
+
+                build job : 'Deploy-StagingArea-Piple'
+
             }
         }
     }
