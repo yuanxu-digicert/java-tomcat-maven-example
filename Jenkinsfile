@@ -18,5 +18,11 @@ pipeline {
                 }
             }
         }
+
+        stage('Deploy Artifact in staging Area'){
+            steps{
+                build job : 'Deploy_Servlet_Staging_Env'
+            }
+        }
     }
 }
