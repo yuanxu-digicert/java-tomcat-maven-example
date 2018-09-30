@@ -5,6 +5,8 @@ pipeline{
 
     stages{
 
+        agent ABC
+
         stage('Build'){
 
             steps{
@@ -12,6 +14,8 @@ pipeline{
 
             }
         }
+
+        agent XYZ
 
         stage('Deploy to Staging'){
             /*Agent selection could go here as well*/
@@ -23,3 +27,11 @@ pipeline{
         }
     }
 }
+
+wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | apt-key add -
+ 
+echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list
+ 
+apt-get update
+ 
+apt-get install jenkins
